@@ -27,7 +27,7 @@ class Statement:
         strvalue = []
         for v in self.value:
             if type(v) == type(''):
-                strvalue.push(v)
+                strvalue.append(v)
             else:
                 strvalue.append(v.strout())
         return 
