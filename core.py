@@ -44,9 +44,9 @@ print("hello! new expression has just generated!")
 print("_=")
 expression = Equation()
 expression.setleft(Frac())
-expression.getleft().setup() = "a"
-expression.getleft().setdown() = "b"
-expression.setright() = "c"
+expression.getleft().setup("a")
+expression.getleft().setdown("b")
+expression.setright("c")
 print(expression.strout())
 print(command)
 while True:
