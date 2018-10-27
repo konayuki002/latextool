@@ -10,6 +10,7 @@ class Statement:
         tempformat = self.strformat
         for i in range(len(strvalue)):
             tempformat = tempformat.replace('#' + i, strvalue[i])
+        print(tempformat)
         return tempformat
     def setvalue(self, index, value):
         self.value[index] = value
