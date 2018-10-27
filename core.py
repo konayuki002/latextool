@@ -1,7 +1,7 @@
 class Frac:
     value = [" ", " "]
     #up and down
-    def strout():
+    def strout(self):
         for v in self.value:
             if type(v) != 'str':
                 v = v.strout()
@@ -19,7 +19,7 @@ class Frac:
 
 class Equation:
     value = [" ", " "]
-    def strout():
+    def strout(self):
         for v in self.value:
             if type(v) != 'str':
                 v = v.strout()
