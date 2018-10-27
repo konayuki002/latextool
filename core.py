@@ -3,7 +3,7 @@ class Frac:
     #up and down
     def strout(self):
         for v in self.value:
-            if type(v) != 'str':
+            if type(v) != type(''):
                 v = v.strout()
         ans = "\\frac{" + self.value[0] + "}{" + self.value[1] + "}"
         return ans
@@ -21,7 +21,7 @@ class Equation:
     value = [" ", " "]
     def strout(self):
         for v in self.value:
-            if type(v) != 'str':
+            if type(v) != type(''):
                 v = v.strout()
         ans = value[0] + " = " + value[1]
         return ans
