@@ -29,7 +29,7 @@ class Statement:
             if type(v) == type(''):
                 strvalue.push(v)
             else:
-                strvalue.push(v.strout())
+                strvalue.append(v.strout())
         return 
         tempformat = self.strformat
         for i in range(len(strvalue)):
