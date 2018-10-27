@@ -2,19 +2,19 @@ class Frac:
     value = [" ", " "]
     #up and down
     def strout():
-        for v in value:
+        for v in self.value:
             if type(v) != 'str':
                 v = v.strout()
-        ans = "\\frac{" + value[0] + "}{" + value[1] + "}"
+        ans = "\\frac{" + self.value[0] + "}{" + self.value[1] + "}"
         return ans
     def setup(arg):
-        value[0] = arg
+        self.value[0] = arg
     def setdown(arg):
-        value[1] = arg
+        self.value[1] = arg
     def getup():
-        return value[0]
+        return self.value[0]
     def getdown():
-        return value[1]
+        return self.value[1]
 
 
 class Equation:
