@@ -8,7 +8,7 @@ class Frac:
             strup = self.up.strout()
         if type(self.down) != type(''):
             strdown = self.down.strout()
-        ans = "\\frac{" + strup + "}{" + down + "}"
+        ans = "\\frac{" + strup + "}{" + strdown + "}"
         return ans
     def setup(self, arg):
         self.up = arg
