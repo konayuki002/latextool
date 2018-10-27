@@ -22,6 +22,7 @@ class Equation:
     def strout(self):
         for v in self.value:
             if type(v) != type(''):
+                print("stringize")
                 v = v.strout()
         ans = self.value[0] + " = " + self.value[1]
         return ans
