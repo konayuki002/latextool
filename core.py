@@ -1,27 +1,3 @@
-class Equation:
-    left = " "
-    right = " "
-    def strout(self):
-        strleft, strright = "", ""
-        if type(self.left) != type(''):
-            strleft = self.left.strout()
-        else:
-            strleft = self.left
-        if type(self.right) != type(''):
-            strright = self.right.strout()
-        else:
-            strright = self.right
-        ans = strleft + "=" + strright
-        return ans
-    def setleft(self, arg):
-        self.left = arg
-    def setright(self, arg):
-        self.right = arg
-    def getleft(self):
-        return self.left
-    def getright(self):
-        return self.right
-
 class Statement:
     def strout(self):
         strvalue = []
