@@ -7,7 +7,7 @@ class Frac:
                 v = v.strout()
         ans = "\\frac{" + self.value[0] + "}{" + self.value[1] + "}"
         return ans
-    def setup(arg):
+    def setup(self, arg):
         self.value[0] = arg
     def setdown(arg):
         self.value[1] = arg
