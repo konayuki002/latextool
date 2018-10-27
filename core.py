@@ -8,6 +8,7 @@ class Statement:
                 strvalue.append(v.strout())
         return 
         tempformat = self.strformat
+        print(self.strformat)
         for i in range(len(strvalue)):
             print(tempformat)
             tempformat = tempformat.replace('#' + i, strvalue[i])
