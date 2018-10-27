@@ -44,7 +44,7 @@ class Equation(Statement):
     strformat = "#0=#1"
     value = [" ", " "]
 class Frac(Statement):
-    strformat = "\\frac{#1}{#2}"
+    strformat = "\\frac{#0}{#1}"
     value = [" ", " "]
 
 command = "Right: <, Left: >, frac: f, remove: r, number: num, if cursor_ is before other statement and make some statement, update the old statement"
@@ -52,11 +52,11 @@ print("hello! new expression has just generated!")
 print("_=")
 print(Frac())
 frac = Frac()
-frac.setup("a")
-frac.setdown("b")
+frac.setvalue(0,"a")
+frac.setvalue(1,"b")
 expression = Equation()
-expression.setleft(frac)
-expression.setright("c")
+expression.setvalue(0,frac)
+expression.setvalue(1,"c")
 print(expression.strout())
 print(command)
 while True:
