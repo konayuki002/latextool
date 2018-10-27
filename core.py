@@ -1,4 +1,7 @@
+command = "Right: <, Left: >, frac: f"
 print("hello! new expression has just generated!")
+print("_=")
+print(command)
 while True:
-    command = input()
-    print(command)
+    strin = input()
+    print(strin)
