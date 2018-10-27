@@ -42,6 +42,7 @@ class String:
 command = "Right: <, Left: >, frac: f, remove: r, number: num, if cursor_ is before other statement and make some statement, update the old statement"
 print("hello! new expression has just generated!")
 print("_=")
+print(Frac())
 expression = Equation()
 expression.setleft(Frac())
 expression.getleft().setup("a")
