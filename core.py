@@ -9,6 +9,7 @@ class Statement:
         return 
         tempformat = self.strformat
         for i in range(len(strvalue)):
+            print(tempformat)
             tempformat = tempformat.replace('#' + i, strvalue[i])
             print(tempformat)
         print(tempformat)
