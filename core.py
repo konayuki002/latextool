@@ -21,11 +21,11 @@ class Statement:
         return self.value[index]
 
 class Equation(Statement):
-    self.strformat = "#0 = #1"
+    strformat = "#0 = #1"
     self.value = [" ", " "]
 class Frac(Statement):
-    self.strformat = "\\frac{#0}{#1}"
-    self.value = [" ", " "]
+    strformat = "\\frac{#0}{#1}"
+    value = [" ", " "]
 
 command = "Right: <, Left: >, frac: f, remove: r, number: num, if cursor_ is before other statement and make some statement, update the old statement"
 print("hello! new expression has just generated!")
