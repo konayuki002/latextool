@@ -26,9 +26,9 @@ class Equation:
         ans = value[0] + " = " + value[1]
         return ans
     def setleft(self, arg):
-        value[0] = arg
+        self.value[0] = arg
     def setright(self, arg):
-        value[1] = arg
+        self.value[1] = arg
     def getleft():
         return value[0]
     def getright():
