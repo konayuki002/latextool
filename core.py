@@ -1,39 +1,44 @@
 class Frac:
-    value = [" ", " "]
+    up = " "
+    down = " "
     #up and down
     def strout(self):
-        for v in self.value:
-            if type(v) != type(''):
-                v = v.strout()
-        ans = "\\frac{" + self.value[0] + "}{" + self.value[1] + "}"
+        strup, strdown = "", ""
+        if type(up) != type(''):
+            strup = self.up.strout()
+        if type(down) != type(''):
+            strdown = self.down.strout()
+        ans = "\\frac{" + strup + "}{" + down + "}"
         return ans
     def setup(self, arg):
-        self.value[0] = arg
+        self.up = arg
     def setdown(self, arg):
-        self.value[1] = arg
+        self.down = arg
     def getup(self):
-        return self.value[0]
+        return self.up
     def getdown(self):
-        return self.value[1]
+        return self.down
 
 
 class Equation:
-    value = [" ", " "]
+    left = " "
+    right = " "
     def strout(self):
-        for v in self.value:
-            if type(v) != type(''):
-                print("stringize")
-                print(v.strout())
-        ans = self.value[0] + " = " + self.value[1]
+        strleft, strright = "", ""
+        if type(left) != type(''):
+            strleft = self.left.strout()
+        if type(right) != type(''):
+            strright = self.right.strout()
+        ans = strleft + "=" + strright
         return ans
     def setleft(self, arg):
-        self.value[0] = arg
+        self.left = arg
     def setright(self, arg):
-        self.value[1] = arg
+        self.right = arg
     def getleft(self):
-        return self.value[0]
+        return self.left
     def getright(self):
-        return self.value[1]
+        return self.right
 
 class String:
     value = ""
