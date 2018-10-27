@@ -1,4 +1,4 @@
-mport msvcrt
+import msvcrt
 import time
 import sys
 
