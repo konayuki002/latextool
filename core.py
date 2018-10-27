@@ -1,5 +1,4 @@
 command = "Right: <, Left: >, frac: f, remove: r, number: num, if cursor_ is before other statement and make some statement, update the old statement"
-expression = 
 print("hello! new expression has just generated!")
 print("_=")
 expression = Equation()
