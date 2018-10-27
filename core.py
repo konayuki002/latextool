@@ -36,7 +36,7 @@ class Equation:
         if type(self.right) != type(''):
             strright = self.right.strout()
         else:
-            strleft = self.left
+            strright = self.right
         ans = strleft + "=" + strright
         return ans
     def setleft(self, arg):
