@@ -23,7 +23,7 @@ class Equation:
         for v in self.value:
             if type(v) != type(''):
                 print("stringize")
-                v = v.strout()
+                print(v.strout())
         ans = self.value[0] + " = " + self.value[1]
         return ans
     def setleft(self, arg):
