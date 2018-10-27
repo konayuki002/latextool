@@ -22,7 +22,7 @@ class Statement:
 
 class Equation(Statement):
     strformat = "#0 = #1"
-    self.value = [" ", " "]
+    value = [" ", " "]
 class Frac(Statement):
     strformat = "\\frac{#0}{#1}"
     value = [" ", " "]
