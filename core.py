@@ -4,9 +4,9 @@ class Frac:
     #up and down
     def strout(self):
         strup, strdown = "", ""
-        if type(up) != type(''):
+        if type(self.up) != type(''):
             strup = self.up.strout()
-        if type(down) != type(''):
+        if type(self.down) != type(''):
             strdown = self.down.strout()
         ans = "\\frac{" + strup + "}{" + down + "}"
         return ans
@@ -25,9 +25,9 @@ class Equation:
     right = " "
     def strout(self):
         strleft, strright = "", ""
-        if type(left) != type(''):
+        if type(self.left) != type(''):
             strleft = self.left.strout()
-        if type(right) != type(''):
+        if type(self.right) != type(''):
             strright = self.right.strout()
         ans = strleft + "=" + strright
         return ans
