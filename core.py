@@ -11,16 +11,16 @@ class Frac:
         self.value[0] = arg
     def setdown(self, arg):
         self.value[1] = arg
-    def getup():
+    def getup(self):
         return self.value[0]
-    def getdown():
+    def getdown(self):
         return self.value[1]
 
 
 class Equation:
     value = [" ", " "]
     def strout():
-        for v in value:
+        for v in self.value:
             if type(v) != 'str':
                 v = v.strout()
         ans = value[0] + " = " + value[1]
@@ -29,15 +29,15 @@ class Equation:
         self.value[0] = arg
     def setright(self, arg):
         self.value[1] = arg
-    def getleft():
-        return value[0]
-    def getright():
-        return value[1]
+    def getleft(self):
+        return self.value[0]
+    def getright(self):
+        return self.value[1]
 
 class String:
     value = ""
-    def strout():
-        return value
+    def strout(self):
+        return self.value
 
 command = "Right: <, Left: >, frac: f, remove: r, number: num, if cursor_ is before other statement and make some statement, update the old statement"
 print("hello! new expression has just generated!")
