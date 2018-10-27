@@ -1,29 +1,3 @@
-class Frac:
-    up = " "
-    down = " "
-    #up and down
-    def strout(self):
-        strup, strdown = "", ""
-        if type(self.up) != type(''):
-            strup = self.up.strout()
-        else:
-            strup = self.up
-        if type(self.down) != type(''):
-            strdown = self.down.strout()
-        else:
-            strdown = self.down
-        ans = "\\frac{" + strup + "}{" + strdown + "}"
-        return ans
-    def setup(self, arg):
-        self.up = arg
-    def setdown(self, arg):
-        self.down = arg
-    def getup(self):
-        return self.up
-    def getdown(self):
-        return self.down
-
-
 class Equation:
     left = " "
     right = " "
@@ -48,10 +22,30 @@ class Equation:
     def getright(self):
         return self.right
 
-class String:
-    value = ""
+class Statement:
     def strout(self):
-        return self.value
+        strvalue = []
+        for v in self.value:
+            if type(v) == type(''):
+                strvalue.push(v)
+            else:
+                strvalue.push(v.strout())
+        return 
+        tempformat = self.strformat
+        for i in range(len(strvalue)):
+            tempformat = tempformat.replace('#' + i, strvalue[i])
+        return tempformat
+    def setvalue(self, index, value):
+        self.value[index] = value
+    def getvalue(self, index):
+        return self.value[index]
+
+class Equation(Statement):
+    strformat = "#0=#1"
+    value = [" ", " "]
+class Frac(Statement):
+    strformat = "\\frac{#1}{#2}"
+    value = [" ", " "]
 
 command = "Right: <, Left: >, frac: f, remove: r, number: num, if cursor_ is before other statement and make some statement, update the old statement"
 print("hello! new expression has just generated!")
