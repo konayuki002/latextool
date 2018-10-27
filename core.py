@@ -6,8 +6,12 @@ class Frac:
         strup, strdown = "", ""
         if type(self.up) != type(''):
             strup = self.up.strout()
+        else:
+            strup = self.up
         if type(self.down) != type(''):
             strdown = self.down.strout()
+        else:
+            strdown = self.down
         ans = "\\frac{" + strup + "}{" + strdown + "}"
         return ans
     def setup(self, arg):
@@ -27,8 +31,12 @@ class Equation:
         strleft, strright = "", ""
         if type(self.left) != type(''):
             strleft = self.left.strout()
+        else:
+            strleft = self.left
         if type(self.right) != type(''):
             strright = self.right.strout()
+        else:
+            strleft = self.left
         ans = strleft + "=" + strright
         return ans
     def setleft(self, arg):
