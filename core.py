@@ -21,12 +21,12 @@ class Statement:
 
 class Equation(Statement):
     def __init__(self):
-        self.strformat = "#0 = #1"
-        self.value = [" ", " "]
+        strformat = "#0 = #1"
+        value = [" ", " "]
 class Frac(Statement):
     def __init__(self):
-        self.strformat = "#0 = #1"
-        self.value = [" ", " "]
+        strformat = "#0 = #1"
+        value = [" ", " "]
 
 command = "Right: <, Left: >, frac: f, remove: r, number: num, if cursor_ is before other statement and make some statement, update the old statement"
 print("hello! new expression has just generated!")
