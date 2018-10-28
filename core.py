@@ -9,7 +9,7 @@ class Statement:
                 strvalue.append(v)
             else:
                 strvalue.append(v.strout())
-        return 
+        return
         tempformat = self.strformat
         print(self.strformat)
         for i in range(len(strvalue)):
@@ -39,6 +39,8 @@ frac = Frac()
 print(frac.strformat)
 frac.setvalue(0,"a")
 frac.setvalue(1,"b")
+print(frac.strformat)
+print(frac.strout())
 expression = Equation()
 expression.setvalue(0,frac)
 expression.setvalue(1,"c")
