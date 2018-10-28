@@ -30,7 +30,7 @@ class Equation(Statement):
 class Frac(Statement):
     def __init__(self):
         super().__init__()
-        strformat = "#0 = #1"
+        strformat = "\\frac\{#1\}\{#2\}"
         value = [" ", " "]
 
 command = "Right: <, Left: >, frac: f, remove: r, number: num, if cursor_ is before other statement and make some statement, update the old statement"
