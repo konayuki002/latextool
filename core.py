@@ -1,7 +1,4 @@
 class Statement:
-    def __init__(self):
-        self.strformat = ""
-        self.value = []
     def strout(self):
         strvalue = []
         for v in self.value:
@@ -24,7 +21,6 @@ class Statement:
 
 class Equation(Statement):
     def __init__(self):
-        super().__init__()
         self.strformat = "#0 = #1"
         self.value = [" ", " "]
 class Frac(Statement):
