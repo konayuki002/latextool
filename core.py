@@ -29,7 +29,7 @@ class Frac(Statement):
         self.strformat = "\\frac{#0}{#1}"
         self.value = [" ", " "]
 
-command = "Right: <, Left: >, frac: f, remove: r, number: num, if cursor_ is before other statement and make some statement, update the old statement"
+command = "Right: ri, Left: l, frac: f, remove: r, number: each number"
 print("hello! new expression has just generated!")
 expression = Equation()
 expression.setvalue(0,Frac())
