@@ -9,7 +9,6 @@ class Statement:
                 strvalue.append(v)
             else:
                 strvalue.append(v.strout())
-        return
         tempformat = self.strformat
         print(self.strformat)
         for i in range(len(strvalue)):
